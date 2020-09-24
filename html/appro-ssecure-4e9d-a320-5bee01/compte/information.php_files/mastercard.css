@@ -1,0 +1,251 @@
+/*.page {
+	background-color: #fff;
+	padding-bottom: 10px;
+}
+.content {
+	width: 98%;
+	background-color: #000;
+	color: #fff;
+	min-height: 454px;
+}*/
+.mastercardPopupWrapper {
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+    left:0;
+    top:0;
+    display:none;
+}
+.mastercardPopup {
+	margin: 70px auto;
+	width: 600px;
+	background-color: #222;
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+}
+.mastercardPopupFermer {
+	text-align: center;
+	position: relative;
+	font-size: 15px;
+	line-height: 14px;
+	top: 0px; 
+	float: right;
+	margin-right: 10px;
+	border: 1px solid #fff;
+	color: #fff;
+	height: 18px;
+	width: 18px;
+}
+.mastercardPopupFermer:hover {
+	cursor: pointer;
+}
+.mastercardPopupImg {
+	display: block;
+	width: 100%;
+}
+#contenerMasterCard{
+    position:relative;
+    left:0px;
+    top:-10px;
+}
+#mastercardLeft{
+    height:auto;
+    position:absolute;
+    overflow: hidden;
+	width: 200px;
+	left: -250px;
+}
+#mastercardRight{
+    height:auto;
+    position:absolute;
+    overflow:hidden;
+	width: 200px;
+	left: 1102px;
+}
+#mastercardLeft img{
+	min-width: 200px;
+	top: -12px;
+	position: relative;
+}
+#mastercardRight img{
+	min-width: 200px;
+	top: -12px;
+	position: relative;
+}
+.mastercardContentLeft {
+	width: 54%;
+	float: left;
+	text-align: center;
+}
+.mastercardContentRight {
+	width: 44%;
+	float: right;
+}
+.mastercardDate {
+	font-family: 'Arial';
+	color: #F57528;
+	font-size: 0.9em;
+	margin: 20px 0 15px 0;
+}
+.mastercardMarques {
+	font-family: 'Arial';
+	font-size: 2em;
+	margin: 2px auto;
+	margin-bottom: 2px;
+}
+.mastercardPari {
+	font-family: 'Arial';
+	font-size: 2em;
+	margin: 10px auto 0 auto;
+	margin-top: 0px;
+	text-transform: uppercase;
+}
+.mastercardPhraseOrange {
+	font-family: 'Arial';
+	font-weight: bold;
+	color: #F57528;
+	margin: 10px auto 0 auto;
+}
+.mastercardPhraseVertDeGris {
+	font-family: 'Arial';
+	font-weight: bold;
+	color: #00B082;
+	margin: 20px auto 10px auto;
+}
+.mastercardTitleVertDeGris {
+	margin-top: 30px;
+	font-family: 'Arial';
+	font-size: 1.4em;
+	text-transform: uppercase;
+	text-align: left;
+	color: #00B082;
+	padding-left: 20px;
+}
+.mastercardTitleVertDeGris:first-child {
+    margin-top:20px;
+}
+.mastercardOrange {
+	color: #F57528;
+}
+.mastercardEncartLeft {
+	padding: 10px;
+	background-color: #fff;
+	color: #000;
+	width: 90%;
+	font-size: 0.9em;
+	margin: 30px auto 0 15px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.mastercardPartenairesImg {
+	text-align:center;
+}
+.mastercardPartenairesImg img {
+    height:60px;
+    margin:20px 0;
+}
+.clear-both {
+    clear:both;
+}
+.mastercardEncartRightLight {
+	padding: 10px;
+	background-color: #fff;
+	color: #000;
+	width: 90%;
+	font-size: 0.9em;
+	margin: 0 15px 0 auto;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+    position:relative;
+	/*height: 77px;*/
+}
+/*.mastercardEncartRightLight input[type=button] {
+	color:#fff;
+	background-color: #f57527;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align: center;
+	width: 135px;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 8px 0 4px 0;
+	cursor: pointer;
+    border:1px solid #f57527;
+    position:absolute;
+    bottom:-15px;
+    right:30px;
+    box-shadow:inset 0 2px 1px #ffe2be;
+}*/
+.mastercardEncartRightLight input[type=submit] {
+    background-color:transparent;
+    border:0;
+    background-image:url("../_images/je-joue.png");
+    background-repeat:no-repeat;
+    position:absolute;
+    bottom:-15px;
+    right:30px;
+    width:130px;
+    height:30px;
+    z-index:101;
+}
+.mastercardEncartRightLight input[type=submit]:active, .mastercardEncartRightLight input[type=submit]:focus {
+    outline: none;
+}
+.mastercardEncartRightLight input[type=submit]:active {
+    background-image:url("../_images/je-joue_active.png");
+}
+.mastercardEncartRightLight input[type=text] {
+	color: #000;
+	text-align: center;
+	width: 119px;
+	background-color: #fff;
+	border: 1px solid #f57527;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	height: 25px;
+	font-weight: bold;
+	font-size: 16px;
+    position:absolute;
+    right:30px;
+}
+.mastercardRightLightLeft {
+	float: left;
+	width: 55%;
+	text-align: right;
+}
+.mastercardRightLightRight {
+	float: right;
+	width: 42%;
+	text-align:center;
+	margin-top: 5px;
+    height:50px;
+}
+.mastercardEncartRightDark {
+	padding: 10px;
+	background-color: #000;
+	color: #fff;
+	width: 90%;
+	font-size: 0.9em;
+	margin: 0 15px 0 auto;
+	text-align: center;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+.mastercardBorder {
+	border: 3px solid #00B082;
+	border-width: 3px;
+	border-style: solid;
+	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00D082), to(#00B0A2) 1 100%;
+	-webkit-border-image: -webkit-linear-gradient(#00D082, #00B0A2) 1 100%;
+	-moz-border-image: -moz-linear-gradient(#00D082, #00B0A2) 1 100%;
+	-o-border-image: -o-linear-gradient(#00D082, #00B0A2) 1 100%;
+	border-image: linear-gradient(to bottom, #00D082, #00B0A2) 1 100%;
+}

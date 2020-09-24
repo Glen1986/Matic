@@ -1,0 +1,79 @@
+﻿function InitLockAnnualFeeDialog(show) {
+
+	$(document).on('click', function (event) {
+		if (!$(event.target).closest('.dyn-item1').length) {
+		    CloseDynItem('1');
+		}
+		if (!$(event.target).closest('.dyn-item2').length) {
+		    CloseDynItem('2');
+		}
+	});
+
+	$('.dyn-item1').bind(
+		'click', function () {
+			$('.dyn-item1 .more-infos').slideDown();
+			$('.dyn-item2').slideUp();
+			$('.dyn-item1').css('cursor', 'default');
+			$('.know-more').fadeOut(function () {
+				$('.div-btn').fadeIn();
+			});
+			$('.dyn-item1').append($('<img/>').attr('src', 'Styles/Img/close-white-dialog.png').addClass('dyn-item-close').on('mousedown', function () { CloseDynItem('1'); }));
+		});
+	$('.dyn-item2').bind(
+		'click', function () {
+			$('.dyn-item2 .more-infos').slideDown();
+			$('.item0').slideUp();
+			$('.dyn-item2').css('cursor', 'default');
+			$('.dyn-item2').append($('<img/>').attr('src', 'Styles/Img/close-white-dialog.png').addClass('dyn-item-close').on('mousedown', function () { CloseDynItem('2'); }));
+		});
+
+	if (show)
+		ShowLockAnnualFee();
+}
+
+function CloseDynItem(index) {
+    if (index == "1") {
+        if ($('.dyn-item1 .more-infos').is(':visible')) {
+            $('.dyn-item1 .more-infos').slideUp();
+            $('.dyn-item1 .dyn-item-close').remove();
+            $('.dyn-item2').slideDown();
+            $('.dyn-item2').css('cursor', 'pointer');
+            $('.div-btn').fadeOut(function () {
+                $('.know-more').fadeIn();
+            });
+        }
+    }
+    else if (index == '2') {
+        if ($('.dyn-item2 .more-infos').is(':visible')) {
+            $('.dyn-item2 .more-infos').slideUp();
+            $('.dyn-item2 .dyn-item-close').remove();
+            $('.item0').slideDown();
+            $('.dyn-item1').css('cursor', 'pointer');
+        }
+    }
+}
+
+function ShowLockAnnualFee() {
+    setTimeout(function () {
+        $("#dialog-lockAnnualFee").dialog({
+            resizable: false,
+            draggable: false,
+            width: 520,
+            height: 'auto',
+            dialogClass: "dialog-white2",
+            modal: true,
+            title: ""
+        });
+        $("#dialog-lockAnnualFee").parent().appendTo(jQuery("form:first"));
+
+        $("#dialog-lockAnnualFee").css('height', 'auto');
+        
+    }, 100);
+}
+
+function HideLockAnnualFee() {
+    $("#dialog-lockAnnualFee").dialog('close');
+}
+
+function ShowDetails() {
+}

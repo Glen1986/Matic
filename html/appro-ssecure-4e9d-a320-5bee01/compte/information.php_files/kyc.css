@@ -1,0 +1,197 @@
+﻿
+/*** RENEW EXPIRED CARD ***/
+div.round_steps {
+    opacity:0.4;
+    height:50px;
+    width:50px;
+    text-align:center;
+    line-height:50px;
+    background:url(../Styles/Img/round_step.png) no-repeat center;
+}
+div.round_steps.active {
+    opacity: 1;
+}
+div.round_steps span {
+    font-size:1.2em;
+    font-weight:bold;
+    color:rgb(255, 106, 0);
+}
+
+.kyc label {
+    font-family:VAGRoundedLight;
+    font-size:1.6em;
+}
+
+.kyc input[type=text],.kyc select {
+    font-size:20px;
+    height:40px;
+    width:100%;
+}
+
+.kyc select option:disabled {
+	display:none;
+}
+.kyc_item {
+    margin-top: 30px;
+}
+
+.kyc_label {
+    margin-bottom:10px;
+}
+
+.kyc_label label {
+    font-family:VAGRoundedLight;
+    font-size:1.6em;
+    text-transform:uppercase;
+}
+
+.kyc_box
+{
+    box-shadow: 1px 2px 5px #C9C9C9;
+    -moz-box-shadow: 1px 2px 5px #C9C9C9;
+    -webkit-box-shadow: 1px 2px 5px #C9C9C9;
+    border:1px solid #ccc;
+    border-radius:4px;
+    background-color:#fff;
+    border:0;
+    width:110px;
+    height:40px;
+    vertical-align:middle;
+    text-align:center;
+    padding:5px 10px;
+}
+
+.kyc_boxList input[type=radio]{
+    display:none;
+}
+
+.kyc_boxList table {
+    border-spacing:0;
+    border-collapse: collapse;
+}
+
+.kyc_boxList td{
+    padding:0 5px;
+}
+.kyc_boxList td:first-child{
+    padding-left:0;
+}
+
+.kyc_boxList td:last-child{
+    padding-right:0;
+}
+
+.kyc_boxList td label:hover {
+    cursor:pointer;
+}
+
+.kyc_boxList td label {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+    display:table-cell;
+    color:black;
+    box-shadow: 1px 2px 5px #C9C9C9;
+    -moz-box-shadow: 1px 2px 5px #C9C9C9;
+    -webkit-box-shadow: 1px 2px 5px #C9C9C9;
+    border:1px solid #ccc;
+    border-radius:4px;
+    background-color:#fff;
+    border:0;
+    width:115px;
+    height:40px;
+    vertical-align:middle;
+    text-align:center;
+    padding:5px 10px;
+    font-family:VAGRoundedLight, Verdana;
+    font-size:16px;
+    text-transform:none;
+}
+/*.kyc_boxList td label:first-child {
+    padding-left:0;
+}
+.kyc_boxList td label:last-child {
+    padding-right:0;
+}*/
+
+.kyc_boxList td label.selected {
+    /*
+    box-shadow: 1px 2px 5px #f57527;
+    -moz-box-shadow: 1px 2px 5px #f57527;
+    -webkit-box-shadow: 1px 2px 5px #f57527;
+    border:1px solid #f57527;
+    */
+    background-color:#f57527;
+    color:#fff;
+}
+
+.kyc_boxList.nowidth td label {
+    width:auto;
+}
+
+table.csscheckbox tr td input[type=checkbox] {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+table.csscheckbox tr td input[type=checkbox] + label {
+	padding-left:35px;
+	height:30px;
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:20px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+table.csscheckbox tr td input[type=checkbox]:checked + label {
+	background-position: 0 -30px;
+}
+table.csscheckbox tr td label {
+    background-image:url("Img/csscheckbox.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type=checkbox].csscheckbox {
+	/*position:absolute; z-index:-1000; left:-1000px;*/
+    display:none;
+    overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].csscheckbox + label.csscheckbox-label {
+	padding-left:35px;
+	height:30px;
+	display:inline-block;
+	line-height:30px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:20px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].csscheckbox:checked + label.csscheckbox-label {
+	background-position: 0 -30px;
+}
+label.csscheckbox-label {
+    background-image:url("Img/csscheckbox.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*** END RENEW EXPIRED CARD ***/

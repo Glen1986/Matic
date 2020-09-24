@@ -1,0 +1,72 @@
+﻿body {
+}
+.home-message {
+}
+.home-message .info-message-popup {
+    display:none;
+}
+.info-message-popup iframe, .info-message-banner iframe {
+    border:0;
+    width:100%;
+}
+.info-message-popup .info-message-popup-close {
+    text-align: right;
+    position: relative;
+}
+.info-message-popup .info-message-popup-close img {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+.info-message-banner .info-message-popup-close {
+    display:none;
+}
+.info-message-banner {
+    background-color:#fff;
+    margin-bottom:30px;
+    padding:10px 0;
+}
+
+.info-message-iframe-container {
+    text-align:center;
+}
+
+.info-message-title {
+    text-align:center;
+    margin-bottom:10px;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:1.2em;
+    font-family:"VAGRoundedLight",Arial;
+}
+.info-message-popup .info-message-title {
+    font-size:1.8em;
+    margin-top:5px;
+}
+
+.message-container {
+    background-color:#fff;
+    padding:20px;
+    width:70%;
+    margin:0 auto 20px auto;
+}
+.message-container h2 {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    font-size:1.1em;
+    padding:4px 0;
+    margin-bottom:20px;
+}
+
+@media screen and (max-width: 600px) {
+    .info-message-popup .info-message-title {
+        font-size: 1.4em;
+        margin-top:2px;
+    }
+    .info-message-popup .info-message-popup-close img {
+        right: -5px;
+        top: 2px;
+    }
+}

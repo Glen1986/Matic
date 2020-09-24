@@ -1,0 +1,186 @@
+﻿#popupM6Wrapper {
+	width: 100%;
+	display: none;
+	position: fixed;
+	background: rgba(226, 226, 226, 0.6);
+	z-index: 9999;
+	overflow: hidden;
+	text-align: center;
+    left:0;
+}
+			
+#popupM6FormContact {
+	display: block;
+	position: fixed;
+	/*top: 400px;*/
+	left: 0;
+	background: #fff;
+	width: 600px;
+	-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	background-image: url(img/main-nickel-m6.png);
+	background-repeat: no-repeat;
+	background-position: 70px 10px;
+}
+.popupM6CloseWrapper {
+	height: 21px;
+}
+.popupM6Close {
+	display: block;
+	float: right;
+	text-align: right;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: 'VAG Rounded';
+	color: #F57528;
+	font-size: 16px;
+	font-weight: bold;
+	padding:0 5px;
+}
+a.popupM6Close:hover{
+	color:#000;
+}
+a.popupM6Close span{
+	color: #000;
+	font-size: 14px;
+	font-weight: 100;
+	padding: 5px 2px;
+}
+a.popupM6Close:hover span{
+	color:#F57528;
+	text-decoration: none;
+}
+			
+.popupM6titre {
+	position: relative;
+	left: -40px;
+    top:-40px;
+	font-family: 'VAG Rounded';
+	font-size: 42px;
+	margin: 0 auto;
+	margin-top: 125px;
+	margin-bottom: 5px;
+	width: 470px;
+	line-height: 0.8em;
+}
+.popupM6slogan {
+	position: relative;
+	left: -40px;
+	top:-40px;
+    font-family: 'VAG Rounded';
+	font-size: 34px;
+	height: 77px;
+	color: #000;
+}
+.popupM6DDay {
+	font-family: 'VAG Rounded';
+	font-size: 42px;
+	color: #F57528;
+	text-align: center;
+	margin-bottom: 42px;
+}
+.popupM6texte {
+	width: 90%;
+	margin: 5% auto;
+	font-family: 'VAGRoundedLight';
+	font-size: 16px;
+	line-height: 1em;
+	color: #000;
+	margin-top: 0;
+}
+.popupM6link a, .popupM6link a:link, .popupM6link a:visited, .popupM6link a:active, .popupM6link a:hover {
+	font-family: 'VAG Rounded';
+	font-size: 18px;
+	color: #F57528;
+	text-decoration: none;
+}
+.popupM6texte img {
+	height: 77px;
+	width: 77px;
+	border: 0;
+}
+.popupM6texte a,
+.popupM6texte a:link,
+.popupM6texte a:active,
+.popupM6texte a:visited,
+.popupM6texte a:hover {
+	color: #F57528;
+	text-decoration: none;
+}
+.popupM6texte a:hover {
+	text-decoration: underline;
+}
+.popupM6texte h2 {
+	font-family: 'Aracne Regular';
+	font-size: 16px;
+	margin: 5px auto;
+}
+.paraM6 {
+	font-size: 14px;
+	margin-top: 10px;
+}
+.popupM6Separateur {
+	font-family: 'VAG Rounded';
+	font-size: 20px;
+	color: #F57528;
+    letter-spacing:1px;
+}
+.popupM6Bandeau {
+	position: absolute;
+	top: 25px;
+	left: -105px;
+	font-size: 42px;
+	font-family: 'VAG Rounded';
+	text-align: center;
+	color: #fff;
+	width: 300px;
+	background-color: #F57528;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+.popupM6abso {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+
+.pub-container {
+    position:relative;
+}
+.pub-left, .pub-right {
+    top:32px;
+    position:absolute;
+}
+.pub-left {
+    top:258px;
+    left:-178px;
+}
+.pub-right {
+    top:220px;
+    right:-179px;
+}
+.mc-left,
+.mc-right {
+    position:absolute;
+    top:781px;
+    left:-178px;
+    width:172px;
+    height:40px;
+    background-color:white;
+    box-shadow: 0px 0px 6px 0px #ccc;
+}
+.mc-right {
+    left:inherit;
+    right:-179px;
+}

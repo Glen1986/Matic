@@ -1,0 +1,29 @@
+﻿function ShowHowToSwitchAccount() {
+    console.log('test');
+    setTimeout(function () {
+        $("#dialog-howto-switchaccount").dialog({
+            resizable: false,
+            draggable: false,
+            width: 560,
+            height: 'auto',
+            dialogClass: "dialog-white2",
+            modal: true,
+            title: ""
+        });
+        $("#dialog-howto-switchaccount").parent().appendTo(jQuery("form:first"));
+
+        $("#dialog-howto-switchaccount").css('height', 'auto');
+        $('.ui-widget-overlay').css('z-index', '99');
+        $('.logo-account').append('<img class="arrow-animation" src="Styles/Img/animation.gif" loop=infinite style="display:none;position:absolute;top:-4px;left:60px;" />');
+        setTimeout(function () { $('.logo-account .arrow-animation').fadeIn(); }, 100);
+        $(document).bind('click', function () { HideHowToSwitchAccount(); });
+
+    }, 100);
+}
+
+function HideHowToSwitchAccount() {
+    console.log('hide');
+    $("#dialog-howto-switchaccount").dialog('close');
+    $('.logo-account .arrow-animation').remove();
+    $(document).unbind('click');
+}

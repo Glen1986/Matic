@@ -1,0 +1,96 @@
+CRITICAL - 2020-09-18 18:02:41 --> Invalid file: login.php
+#0 /home/admin/web/matichouse.ml/public_html/application/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('login.php', Array, true)
+#2 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('login.php')
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-18 18:03:20 --> Invalid file: Home.php
+#0 /home/admin/web/matichouse.ml/public_html/application/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Home.php')
+#1 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('Home', Array, true)
+#2 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('Home')
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-18 18:14:14 --> Invalid file: head..php
+#0 /home/admin/web/matichouse.ml/public_html/application/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head..php')
+#1 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('head.', Array, true)
+#2 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('head.')
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-18 18:19:20 --> Invalid file: Head.php
+#0 /home/admin/web/matichouse.ml/public_html/application/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Head.php')
+#1 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('Head', Array, true)
+#2 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('Head')
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-18 18:21:28 --> syntax error, unexpected '<', expecting end of file
+#0 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#1 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('home')
+#2 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-18 18:23:39 --> syntax error, unexpected '<', expecting end of file
+#0 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#1 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('home')
+#2 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-18 20:20:46 --> syntax error, unexpected '<', expecting end of file
+#0 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#1 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('home')
+#2 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-18 20:36:25 --> syntax error, unexpected 'url' (T_STRING), expecting ',' or ';'
+#0 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#1 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('home')
+#2 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-18 20:37:21 --> Undefined variable: baseURL
+#0 /home/admin/web/matichouse.ml/public_html/application/app/Views/home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/admin/web...', 9, Array)
+#1 /home/admin/web/matichouse.ml/public_html/application/system/View/View.php(246): include('/home/admin/web...')
+#2 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#3 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('home')
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-18 20:37:38 --> syntax error, unexpected ')'
+#0 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#1 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('home')
+#2 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#3 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-18 20:37:51 --> Undefined variable: baseURL
+#0 /home/admin/web/matichouse.ml/public_html/application/app/Views/home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/admin/web...', 9, Array)
+#1 /home/admin/web/matichouse.ml/public_html/application/system/View/View.php(246): include('/home/admin/web...')
+#2 /home/admin/web/matichouse.ml/public_html/application/system/Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#3 /home/admin/web/matichouse.ml/public_html/application/app/Controllers/Home.php(7): view('home')
+#4 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(918): App\Controllers\Home->index()
+#5 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home/admin/web/matichouse.ml/public_html/application/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/admin/web/matichouse.ml/public_html/application/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

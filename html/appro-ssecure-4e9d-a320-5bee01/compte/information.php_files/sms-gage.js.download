@@ -1,0 +1,42 @@
+﻿function InitSMSGage(sUsed, sTotal) {
+    var sMax = "";
+    var sVal = "";
+
+    sMax = sTotal;
+    sVal = sUsed;
+    InitProgressBar('HeaderSMSProgress', sMax, sVal);
+}
+function InitProgressBar(id, max, val) {
+    //console.log(val + "/" + max);
+    var pVal = val.replace(',00', '');
+    var iVirg = val.indexOf(',');
+    if (iVirg != -1)
+        pVal = val.substring(0, iVirg);
+    //console.log(pVal);
+    $('#' + id).progressbar({
+        max: parseInt(max),
+        value: parseInt(pVal)
+    });
+
+    lblProgressValue = $('<span/>').addClass('progressLabel').append(val);
+
+    var pBarWidth = $('#' + id + ' .ui-progressbar-value').outerWidth();
+    //console.log(pBarWidth);
+
+    $('#' + id + ' .ui-progressbar-value').empty().append(lblProgressValue).show();
+    if (pVal == '0') {
+        $('#' + id + ' .ui-progressbar-value').css('border', '0');
+    }
+
+    var lblWidth = $('#' + id + ' .progressLabel').outerWidth() + 5;
+    //console.log(lblWidth);
+
+    if (lblWidth >= pBarWidth) {
+        $('#' + id + ' .progressLabel').position({ my: 'left', at: 'right+5', of: $('#' + id + ' .ui-progressbar-value') });
+        $('#' + id + ' .progressLabel').addClass('font-orange');
+    }
+    else {
+        $('#' + id + ' .progressLabel').position({ my: 'right', at: 'right-5', of: $('#' + id + ' .ui-progressbar-value') });
+        $('#' + id + ' .progressLabel').addClass('font-white');
+    }
+}

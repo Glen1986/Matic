@@ -1,0 +1,61 @@
+﻿body {
+}
+
+#popup-pendingtransfer {
+    overflow:hidden;
+}
+#popup-pendingtransfer .pendingtransfer-loading {
+    display:none;
+    position:absolute;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color:rgba(249, 249, 249, 0.5);
+    background-size: 35px 27px;
+    z-index:100;
+}
+#popup-pendingtransfer .close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#popup-pendingtransfer .close-button img {
+    cursor:pointer;
+}
+#popup-pendingtransfer .title {
+    font-family:'VAG Rounded SSi';
+    font-size: 1.2em;
+    margin: 6px 0 15px 0;
+}
+.pending-transfer-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    border-bottom:1px solid #ddd;
+    padding: 5px 0;
+}
+.pending-transfer-item .content {
+    flex:2;
+    overflow:hidden;
+    /*min-width:60%;*/
+}
+.pending-transfer-item .button-container {
+    flex:1;
+    text-align:center;
+}
+.pending-transfer-item .button-container input {
+    height:28px;
+}
+
+@media screen and (max-width: 600px) {
+    #popup-pendingtransfer {
+        font-size:0.9em;
+    }
+    .pending-transfer-item .button-container {
+        flex: 0;
+    }
+}

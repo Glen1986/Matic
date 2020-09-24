@@ -1,0 +1,21 @@
+﻿function ShowPendingTransferDialog(mobile) {
+    $('#popup-pendingtransfer').dialog({
+        resizable: false,
+        draggable: false,
+        width: (!mobile) ? 500 : '95%',
+        //minHeight: 500,
+        dialogClass: "dialog-white",
+        modal: true,
+        title: ""
+    });
+    $('#popup-pendingtransfer .close-button img').bind('click', function () {
+        HidePendingTransferDialog();
+    });
+    setTimeout(function () {
+        $("#popup-pendingtransfer").parent().appendTo(jQuery("form:first"));
+    }, 500);
+}
+
+function HidePendingTransferDialog() {
+    $('#popup-pendingtransfer').dialog('close');
+}

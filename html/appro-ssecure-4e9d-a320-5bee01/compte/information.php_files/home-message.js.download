@@ -1,0 +1,98 @@
+﻿function InitHomeMessage(mobile) {
+
+    // BBCODE CONVERSION
+    $('.info-message-popup .bbcode-text, .info-message-banner .bbcode-text').each(function () {
+        var html = MessageToHTML($(this).text());
+        $(this).empty().append(html);
+    });
+
+    // POPUP WITHOUT IFRAME
+    $(".info-message-popup:not(:has(iframe))").each(function () {
+        $(this).dialog({
+            resizable: false,
+            draggable: false,
+            width: (!mobile) ? 600 + 'px' : '95%',
+            //minHeight: 500,
+            dialogClass: "dialog-white",
+            modal: true,
+            title: ""
+        });
+        var that = $(this);
+        $(this).find('.info-message-popup-close img').bind('click', function () {
+            $(that).dialog('close');
+        });
+    });
+
+    // POPUP WITH IFRAME
+    $('.info-message-popup iframe').load(function () {
+        if (!$(this).closest('.info-message-popup').hasClass('ui-dialog-content')) {
+            var iframe = this;
+            setTimeout(function () {
+                var height = iframe.contentWindow.document.body.offsetHeight + 0;
+                var width = iframe.contentWindow.document.body.offsetWidth + 0;
+                if (width == 0) {
+                    width = 600;
+                    height -= 32;
+                }
+
+                //console.log('width:' + width + 'px\nheight:' + height + 'px');
+
+                iframe.style.height = height + 'px';
+                iframe.style.width = (!mobile) ? width + 'px' : '100%';
+
+                $(iframe).closest('.info-message-popup').dialog({
+                    resizable: false,
+                    draggable: false,
+                    width: (!mobile) ? width + 27 + 'px' : '95%',
+                    //minHeight: 500,
+                    dialogClass: "dialog-white",
+                    modal: true,
+                    title: ""
+                });
+
+                var that = $(iframe).closest('.info-message-popup');
+                $(iframe).closest('.info-message-popup').find('.info-message-popup-close img').bind('click', function () {
+                    $(that).dialog('close');
+                });
+            }, 100);
+        }
+    });
+
+    // BANNER WITH IFRAME
+    $('.info-message-banner iframe').load(function () {
+        var iframe = this;
+        setTimeout(function () {
+            var height = iframe.contentWindow.document.body.offsetHeight + 0;
+            var width = iframe.contentWindow.document.body.offsetWidth + 0;
+
+            //console.log('width:' + width + 'px\nheight:' + height + 'px');
+
+            iframe.style.height = height + 'px';
+            iframe.style.width = width + 'px';
+        });
+    });
+}
+
+function MessageToHTML(msg) {
+    if (msg.length > 0) {
+
+        var result = XBBCODE.process({
+            text: msg,
+            removeMisalignedTags: false,
+            addInLineBreaks: true
+        });
+
+        return result.html;
+
+        /*msg = msg.replace(/\[b\]/g, '<b>')
+            .replace(/\[\/b\]/g, '</b>')
+            .replace(/\[i\]/g, '<i>')
+            .replace(/\[\/i\]/g, '</i>')
+            .replace(/\[u\]/g, '<span style="text-decoration:underline">')
+            .replace(/\[\/u\]/g, '</span>')
+            .replace(/\[o\]/g, '<span class="font-orange">')
+            .replace(/\[\/o\]/g, '</span>');
+
+        return nl2br(msg);*/
+    }
+}

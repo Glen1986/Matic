@@ -1,0 +1,82 @@
+﻿#HeaderSMSProgress.ui-progressbar {
+    height:10px;
+    border:none;
+    /*box-shadow:inset 1px 2px 5px #888;
+    -moz-box-shadow:inset 1px 2px 5px #888;
+    -webkit-box-shadow:inset 1px 2px 5px #888;*/
+    background-image:none;
+    background-color:#fff;
+    padding:0 2px;
+}
+#HeaderSMSProgress .ui-progressbar-value {
+    overflow:visible;
+    /*box-shadow:inset 1px 2px 5px #da6823;
+    -moz-box-shadow:inset 1px 2px 5px #da6823;
+    -webkit-box-shadow:inset 1px 2px 5px #da6823;*/
+    border-radius:50px;
+    position:relative;
+    z-index:98;
+    height:60%;
+    margin-top:1px;
+}
+#HeaderSMSProgress .ui-progressbar-value span {
+    white-space:nowrap;
+    font-size:10px;
+    color:#000;
+    position:relative;
+    top:1px;
+}
+#HeaderSMSProgress.ui-progressbar.ui-corner-all {
+    border-radius:50px;
+}
+#HeaderSMSProgress .ui-progressbar-value span.font-white {
+    color:#fff;
+    display:none;
+}
+#HeaderSMSProgress .ui-progressbar-value span.font-orange {
+    color:#f57527;
+    display:none;
+}
+#block-sms-gage {
+    position:relative;
+    padding:5px 0 10px 0;
+    top:1px;
+}
+#block-sms-gage:hover .sms-infos {
+    display:block;
+}
+.sms-infos {
+    width:222px;
+    padding:10px 17px 10px 18px;
+    display:none;
+    position:absolute;
+    top:50px;
+    left:-10px;
+    z-index:99;
+    background-color:#fff;
+    font-size:0.8em;
+    box-shadow: 1px 2px 5px #C9C9C9;
+    -moz-box-shadow: 1px 2px 5px #C9C9C9;
+    -webkit-box-shadow: 1px 2px 5px #C9C9C9;
+    background-color:#fff;
+    /*background-color:#bebdbd;*/
+    border:0;
+    color:#000;
+}
+.sms-infos ul {
+    padding:0;
+    margin:0 0 0 10px;
+    list-style-image:url(Img/puce.png);
+}
+.sms-infos ul li {
+    margin-bottom:5px;
+}
+.sms-infos ul li.last {
+    margin-bottom:0;
+}
+.sms-infos div {
+    margin-top: 10px;
+    font-size: 0.85em;
+    letter-spacing: 0.6px;
+    opacity: 0.9;
+}

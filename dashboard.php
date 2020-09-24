@@ -25,9 +25,9 @@ $matches = implode(',', $array);
 
 
 
-//$query = "SELECT * FROM `traffic_devices` WHERE `devices_serie` IN($matches)";
+$query = "SELECT * FROM `traffic_devices` WHERE `devices_serie` IN($matches)";
 //echo $query; die();
-//$result = $conn->query($query);
+$result = $conn->query($query);
 
 
 //$traffics = $result->fetch_all(MYSQLI_ASSOC);
