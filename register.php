@@ -88,7 +88,7 @@ if( isset($_POST['email']) && isset($_POST['password']) && isset($_POST['passwor
   <div class="center-block w-xxl w-auto-xs p-y-md">
     <div class="navbar">
       <div class="pull-center">
-        <div ui-include="'views/blocks/navbar.brand.html'"></div>
+  <!--      <div ui-include="'views/blocks/navbar.brand.html'"></div>  -->
       </div>
     </div>
 

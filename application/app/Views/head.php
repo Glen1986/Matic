@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
- 
+
 <head>
 <meta charset=utf-8 />
-<title>Curso Codeigniter</title>
+<title>Matic CodeIgniter</title>
 <style>
   header {
     height: 100px;

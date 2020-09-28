@@ -4,7 +4,11 @@ class Dashboard extends BaseController
 {
 	public function index()
 	{
-		return view('welcome_message');
+		$data = [];
+
+		echo view('templates/header', $data);
+		echo view('dashboard');
+		echo view('templates/footer');
 	}
 
 	//--------------------------------------------------------------------

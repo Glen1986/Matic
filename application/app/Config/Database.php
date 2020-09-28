@@ -31,10 +31,10 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'matichouse.ml',
-		'username' => 'admin_database',
-		'password' => 'Yomismo86',
-		'database' => 'admin_datanase',
+		'hostname' => 'https://matichouse.ml',
+		'username' => 'admin_code',
+		'password' => '121212',
+		'database' => 'admin_code',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
